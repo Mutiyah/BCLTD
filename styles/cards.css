@@ -1,0 +1,83 @@
+/* .............
+    Card section 
+................*/
+
+#card-section{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    width: 80vw;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #0A4273;
+}
+#card-container{
+    background-image: url(../images/bground.jpg);
+    background-attachment: fixed;
+    width: 100vw;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#our-services h1, #call-us{
+    color: #0A4273;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 10px 0 15px 0;
+    text-align: center;
+}
+#call-us{
+    font-size: 2em;
+    padding-top: 0;
+}
+.card-can{
+    /* background-color: tomato; */
+    width: 15em;
+    color: #ADC5D9;
+    margin: auto;
+    margin-bottom: 15px;
+    line-height: 20px;
+    height: 300px;
+}
+.card-can ul li{
+    margin-left: 20px;
+    padding-top: 5px;
+}
+.card-can .icon{
+    display: flex;
+    flex-shrink: 1;
+    padding: 5px;
+    background-color: #0A4273;
+    border-radius: 0 10px 0 10px;
+}
+.card-can .icon h4{
+    margin-left: 5px;
+    align-self: center;
+    font-size: 1em;
+}
+.card-text{
+    padding: 15px 5px;
+    color: #000;
+}
+
+@media screen and (min-width: 300px){
+    #card-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-can{
+        flex: 1 0 15em;
+        max-width: 14em;
+        border: 1px solid #0A4273;
+          border-radius: 0 10px 0 10px;
+    }
+    #our-services{
+        flex: 0 0 100%;
+    }
+
+    #call-us{
+        flex:  0 0 100%;
+    }
+}

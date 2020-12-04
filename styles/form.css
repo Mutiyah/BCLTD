@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+form{
+  width: 90%;
+  margin: auto;
+}
+form h2{
+    text-align: center;
+    color: #041E40;
+    text-shadow: 0 0 2px #ADC5D9;
+    font-size: 2em;
+    padding: 20px;
+}
+.input, button[type="submit"]{
+    height: auto;
+    padding: 10px;
+    background-color: #0A4273;
+    margin-bottom: 10px;
+}
+
+.input input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"], textarea, button[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 3px #000;
+    border: none;
+    background-color: #fff;
+    opacity: 0.6;
+    font-size: 1.5em;
+    transition: opacity .9s ease-in-out;
+}
+
+.input input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover, textarea, button[type="submit"]:hover{
+   opacity: 1;
+}
+
+ button[type="submit"]{
+    margin-top: 20px;
+     height: 50px;
+    background-image: linear-gradient(#ADC5D9, #041E40) !important;
+    border: none;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFF;
+    box-shadow: 3px 3px 5px #ADC5D9;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 650px){
+#form-section{
+  -webkit-order: 3;
+        order: 3;
+}
+}
+@media screen and (min-width: 650px){
+    #form-section{
+        align-self: center;
+        flex: 2;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    form h2{
+        flex: 0 1 100%;
+    }
+    .input{
+        flex: 0 1 45%;
+        max-width: 45%;
+    }
+    .text, button{
+        flex: 0 1 95%;
+        max-width: 95%;
+    }
+}

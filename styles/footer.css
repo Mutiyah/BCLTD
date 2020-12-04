@@ -1,0 +1,101 @@
+footer{
+    color: #Adc5d9;
+    background-color: #0B2559;
+    padding: 20px;
+    overflow: hidden;
+}
+.contact {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+.contact h1{
+    color: #Adc5d9;
+    font-size: 2em;
+    font-weight: bold;
+}
+hr{
+    border: 0.2px solid #fff;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.customer-service{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.customer-service h2{
+    text-decoration: underline;
+    font-size: 2em;
+    padding-bottom: 15px;
+}
+.contact-icon i{
+    padding-right:20px;
+}
+
+.contact-icon{
+    margin-bottom: 10px;
+}
+#copy-right{
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    width: 100vw;
+    text-align: center;
+    font-size: 1.1em;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: #0B2559;
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 4px;
+  }
+@media screen and (max-width: 350px){
+    footer{
+        padding: 0;
+    }
+    .contact {
+        width: 100%;
+    }
+    .customer-service{
+        width: 95vw;
+    }
+}
+
+@media screen and (min-width: 820px){
+    .foot{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+  .cus_service{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 300px;
+  }
+    .ord1{
+       order: 1;
+    }
+    .ord1{
+        order: 3;
+    }
+    .map{
+        order: 2;
+       
+    }
+}

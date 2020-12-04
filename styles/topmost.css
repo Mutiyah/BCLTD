@@ -1,0 +1,96 @@
+#topmost-section{
+    box-sizing: border-box;
+    order: 1;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 110px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* margin-left: -15px; */
+}
+#nigImage img{
+    border-radius: 100px;
+     flex: 1 1 110px;
+}
+.company-name{
+    display: flex;
+    flex: 4 1 200px;
+}
+#coyName{
+    align-self: flex-end;
+}
+
+#coyName h1{
+    color: #0A4273;
+    margin-bottom: 2px;
+    font-size: 2.2em; 
+}
+#contact{
+    margin-left: 15px;
+    flex: 1 0 190px;
+    max-width: 190px;
+    height: 90px;
+    background-color: #0A4273;
+    padding: 3px 25px 5px 15px;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.9em;
+    display: flex;
+}
+#contact-us strong{
+    text-decoration: underline;
+}
+
+#contact #icon i{
+    padding: 20px 10px 15px 0;
+}
+
+
+    /* ............................  
+    header section media query 
+   ............................ */
+   @media screen and (max-width: 820px){
+    #nigImage{
+        display: none;
+        flex: 1 1 100px;
+    }
+    #coyLogo{
+        flex: 1 0 200px;
+    }
+ 
+   }
+@media screen and (max-width: 690px){
+    
+    #topmost-section, .company-name{
+           height: auto;
+           display: block
+       }
+       .company-name div img{
+           width: 170px;
+       }
+       #coyLogo{
+           width: 200px;
+           margin: auto;
+       }
+       #coyName{
+         border-radius: 10px;
+           text-align: center;
+           max-width: 85vw;
+           margin: auto;
+           margin-bottom: 10px;
+           background-color:#d6e0e9;
+       }
+       #contact{
+           max-width: 85vw;
+           margin: auto;
+           font-size: 1em;
+           word-spacing: 4px;
+           padding: 10px 40px;
+           height: auto;
+       }
+    }
+
+

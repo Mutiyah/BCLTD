@@ -1,0 +1,99 @@
+#conbined{
+    background-color: #fff;
+    padding: 30px 0 30px 0;
+    width: 100vw;
+}
+.conbined-can{ 
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.card-can{
+    box-shadow: 1px 1px 1px #000;
+}
+.card-can1{
+    align-self: center;
+    background-color: #041E40;
+    color: #ffffff;
+    padding: 10px 20px;
+    width: 19em;
+    max-height: 470px;
+    margin-bottom: 10px;
+    align-self: center;
+    border-radius: 10px;
+}
+.icon1 h4{
+    font-size: 1.6em;
+    color: #6085A6;
+    font-family: 'Courier New', Courier, monospace;
+}
+.icon1 img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+.card-text1 ul{
+    padding-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+}
+
+.card-text1 ul li{
+    padding-bottom: 5px;
+}
+
+.card-text1 button{
+    background-image: linear-gradient(#ADC5D9, #041E40);
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    width: 6em;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px){
+#conbined{
+    display: flex;
+    flex-direction: column;
+}
+
+   .conbined-can{
+        -webkit-order: 1;
+        order: 1;
+    }
+    .can2{
+        -webkit-order: 2;
+        order: 2;
+    }
+
+}  
+@media screen and (min-width: 1000px){
+    #conbined{
+        display: flex;
+    }
+    .conbined-can{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex: 1;
+    }
+}
+@media screen and (min-width: 650px){
+    .conbined-can{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .card-can1{
+            flex: 0 0 19em;
+            max-width: 20em;
+            margin-bottom: 100px;
+            margin-right: 0;
+        }
+}
